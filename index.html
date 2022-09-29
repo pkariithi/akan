@@ -8,11 +8,60 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <title>Akan Names</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div class="page">
-
+    <section class="hero">
+      <h1>Akan Names</h1>
+      <h2>Akan names are derived from Ghanian culture.</h2>
+      <p>Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. This web application will help you determine your Akan name just by entering your birthday and gender.</p>
+    </section>
+    <section class="content">
+      <div class="content-main">
+        <div class="content-main-results">
+          <h3>Your Akan Name is:</h3>
+          <h3 id="result-akan-name">Kwasi</h3>
+        </div>
+        <div class="content-main-random">
+          <p>Did you know:</p>
+          <h3>The Akan Name for a <strong id="rand-gender">Girl</strong> born on a <strong id="rand-day">Friday</strong> is:</h3>
+          <h3 id="rand-akan-name">Kwasi</h3>
+        </div>
+        <div class="content-main-all">
+          <p>Did you know:</p>
+          <h3>The Akan Name for a <strong id="rand-gender">Girl</strong> born on a <strong id="rand-day">Friday</strong> is:</h3>
+          <h3 id="rand-akan-name">Kwasi</h3>
+        </div>
+        <div class="content-main-buttons">
+          <a href="#" id="random" name="random" class="button">View a random Akan Name</a>
+          <a href="#" id="all" name="all" class="button">View all Akan Names</a>
+        </div>
+      </div>
+      <div class="content-form">
+        <form action="" method="POST">
+          <p>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+          </p>
+          <p>
+            <label>Gender:</label>
+            <span>
+              <label for="male"><input type="radio" name="male" id="male"> Male</label>
+            </span>
+            <span>
+              <label for="female"><input type="radio" name="female" id="female"> Female</label>
+            </span>
+          </p>
+          <p><input type="submit" name="submit" id="submit" value="Show me my Akan Name"></p>
+        </form>
+      </div>
+    </section>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
