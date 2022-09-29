@@ -1,0 +1,375 @@
+/* CSS Document */
+@charset "utf-8";
+
+/* vars */
+:root {
+
+  /* fonts */
+  --base-font-size: 18px;
+  --base-font-family: 'Source Sans Pro', Arial, sans-serif;
+  --monospace-font-family: monospace, monospace;
+
+  /* container */
+  --container-max-width: 1080px;
+  --container-padding-tb: 0.5em;
+  --container-padding-rl: 1em;
+
+  /* theme colors */
+  --red-color: #f71735;
+  --black-color: #011627;
+  --bg-color: #f5fafa;
+  --white-color: #ffffff;
+
+  /* rating colors */
+  --rating-filled-color: #ffa500;
+
+  /* alert colors */
+  --alert-success-bg: #0ba958;
+  --alert-info-bg: #2278b2;
+  --alert-warning-bg: #e08019;
+  --alert-error-bg: #d42918;
+
+  /* form colors */
+  --form-bg: #fafafa;
+  --form-border-color: #ddd;
+  --form-placeholder-color: #bbb;
+  --form-border-radius: 4px;
+
+  /* social colors */
+  --facebook-color: #3b5998;
+  --twitter-color: #55acee;
+  --tumblr-color: #35465c;
+  --pinterest-color: #bd081c;
+  --whatsapp-color: #25D366;
+  --linkedin-color: #0077b5;
+  --instagram-color: #E4405F;
+  --telegram-color: #1f9bda;
+  --youtube-color: #FF0000;
+  --email-color: #fba216;
+  --play-store: #414141;
+  --app-store: #0D96F6;
+}
+
+/*----------  reset  ----------*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  transition: all .6s ease;
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  line-height: 1;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block
+}
+audio,
+canvas,
+video {
+  display: inline-block
+}
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+[hidden],
+template {
+  display: none
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal
+}
+a,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+label {
+  cursor: pointer
+}
+a {
+  background: transparent
+}
+a:focus {
+  outline: thin dotted
+}
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0
+}
+abbr[title] {
+  border-bottom: 1px dotted
+}
+b,
+strong {
+  font-weight: 700
+}
+dfn {
+  font-style: italic
+}
+hr {
+  height: 0
+}
+mark {
+  background: #ff0;
+  color: #000
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--monospace-font-family);
+  font-size: 1em
+}
+pre {
+  white-space: pre-wrap
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"
+}
+small {
+  font-size: 80%
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+sup {
+  top: -.5em
+}
+sub {
+  bottom: -.25em
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+table td,
+table th {
+  vertical-align: middle
+}
+
+/* img / svg */
+img {
+  border: 0
+}
+svg:not(:root) {
+  overflow: hidden
+}
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%
+}
+
+/* lists */
+ul,
+ol,
+ul li,
+ol li {
+  list-style: none
+}
+
+/* elements */
+a {
+  color: var(--red-color);
+  text-decoration: none
+}
+a:hover {
+  text-decoration: underline
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=search],
+input[type=number],
+select,
+textarea {
+  padding: 11px 16px;
+  border: 1px solid var(--form-border-color);
+  background-color: var(--form-bg);
+  border-radius: var(--form-border-radius);
+  color: var(--black-color);
+  font-family: inherit;
+}
+textarea {
+  resize: vertical;
+  height: 7.5em;
+  line-height: 1.4
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--red-color)
+}
+.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  display: inline-block;
+  padding: 6px 18px;
+  background-color: var(--red-color);
+  border: 2px solid var(--red-color);
+  border-radius: var(--form-border-radius);
+  color: var(--white-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a.button {
+  text-decoration: none
+}
+.button--clear {
+  border: none;
+  background-color: transparent;
+  color: var(--black-color);
+  padding-right: 0;
+  padding-left: 0
+}
+input[type=submit].button--border,
+.button--border {
+  background-color: transparent;
+  color: var(--black-color)
+}
+input[type=submit].button--icon,
+.button--icon {
+  display: flex;
+}
+input[type=submit].button--block,
+.button--block {
+  width: 100%;
+  text-align: center;
+}
+.button:hover,
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+  background-color: var(--black-color);
+  border-color: var(--black-color)
+}
+.button--border:hover {
+  color: var(--white-color)
+}
+.button--clear:hover {
+  border: none;
+  background-color: transparent;
+  color: var(--red-color);
+}
+
+/* material symbols - https://fonts.google.com/icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+/* structure */
+html {
+  background-color: var(--white-color);
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  overflow: scroll;
+}
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-size: 1em;
+  font-weight: 400;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  width: 100%;
+  max-width: var(--container-max-width);
+  padding: var(--container-padding-tb) var(--container-padding-rl);
+  margin: 0 auto
+}
+
+/* responsiveness */
+@media (max-width:1080px){
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width:1024px){
+}
+@media (max-width:960px){
+}
+@media (max-width:800px){
+}
+@media (max-width:768px){}
+@media (max-width:640px){
+}
+@media (max-width:600px){}
+@media (max-width:480px){
+}
+@media (max-width:360px){
+}
