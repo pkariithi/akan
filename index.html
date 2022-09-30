@@ -28,19 +28,62 @@
     <section class="content">
       <div class="container">
         <div class="content-main">
-          <div class="content-main-results">
-            <h3>Your Akan Name is:</h3>
-            <h3 id="result-akan-name">Kwasi</h3>
-          </div>
           <div class="content-main-random">
             <p>Did you know:</p>
             <h3>The Akan Name for a <strong id="rand-gender">Girl</strong> born on a <strong id="rand-day">Friday</strong> is:</h3>
             <h3 id="rand-akan-name">Kwasi</h3>
           </div>
           <div class="content-main-all">
-            <p>Did you know:</p>
-            <h3>The Akan Name for a <strong id="rand-gender">Girl</strong> born on a <strong id="rand-day">Friday</strong> is:</h3>
-            <h3 id="rand-akan-name">Kwasi</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Male</th>
+                  <th>Female</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sunday</td>
+                  <td>Kwasi</td>
+                  <td>Akosua</td>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td>Kwadwo</td>
+                  <td>Adwoa</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>Kwabena</td>
+                  <td>Abenaa</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>Kwaku</td>
+                  <td>Akua</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Yaw</td>
+                  <td>Yaa</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>Kofi</td>
+                  <td>Afua</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>Kwame</td>
+                  <td>Ama</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content-main-results">
+            <h3>Your Akan Name is:</h3>
+            <h3 id="result-akan-name">Kwasi</h3>
           </div>
           <div class="content-main-buttons">
             <a href="#" id="random" name="random" class="button">View a random Akan Name</a>
@@ -48,7 +91,14 @@
           </div>
         </div>
         <div class="content-form">
+          <div class="content-form-title">
+            <h4>Enter your date of birth and gender to know your Akan name.</h4>
+          </div>
           <form action="" method="POST">
+            <ul class="alert alert-error">
+              <li>The date of birth is invalid</li>
+              <li>The gender is invalid</li>
+            </ul>
             <p>
               <label for="dob">Date of Birth</label>
               <input type="date" name="dob" id="dob">

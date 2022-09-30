@@ -34,7 +34,7 @@
   --form-bg: #fafafa;
   --form-border-color: #ddd;
   --form-placeholder-color: #bbb;
-  --form-border-radius: 4px;
+  --form-border-radius: 20px;
 
   /* social colors */
   --facebook-color: #3b5998;
@@ -236,12 +236,13 @@ a:hover {
 input[type=text],
 input[type=email],
 input[type=tel],
+input[type=date],
 input[type=password],
 input[type=search],
 input[type=number],
 select,
 textarea {
-  padding: 11px 16px;
+  padding: 8px 12px;
   border: 1px solid var(--form-border-color);
   background-color: var(--form-bg);
   border-radius: var(--form-border-radius);
@@ -256,6 +257,7 @@ textarea {
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
+input[type=date]:focus,
 input[type=password]:focus,
 input[type=search]:focus,
 input[type=number]:focus,
@@ -269,13 +271,12 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
   display: inline-block;
-  padding: 6px 18px;
+  padding: 8px 12px;
   background-color: var(--orange-color);
   border: 2px solid var(--orange-color);
   border-radius: var(--form-border-radius);
   color: var(--white-color);
-  font-weight: bold;
-  text-transform: uppercase;
+  font: inherit;
 }
 a.button {
   text-decoration: none
@@ -363,9 +364,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-.hero .container > div {
-  max-width: 70%;
-}
 .hero .container h1 {
   color: var(--orange-color);
   font-size: 3em;
@@ -376,14 +374,138 @@ body {
   font-size: 1.5em;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: 0.3em;
+  margin-bottom: 1em;
 }
 .hero .container p {
   font-weight: 400;
   line-height: 1.2;
+  max-width: 50%;
 }
 .hero .container p + p {
   margin-top: 1em;
+}
+
+/* content */
+.content {
+  position: relative;
+}
+.content-main {
+  flex-basis: 60%;
+  padding: 1em 1em 1em 0;
+}
+.content-form {
+  flex-basis: 40%;
+  margin-top: -200px;
+}
+
+/* content main */
+.content-main-all,
+.content-main-random {
+  display: none;
+}
+.content .container {
+  align-items: flex-start;
+}
+
+/* content main random */
+.content-main-random p {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: #888;
+}
+.content-main-random h3 {
+  font-size: 1em;
+  line-height: 1.2;
+}
+.content-main-random h3#rand-akan-name {
+  font-size: 2em;
+}
+
+/* content main all */
+.content-main-all table {
+  width: 100%;
+}
+.content-main-all table thead {
+  background-color: var(--navy-color);
+  color: var(--white-color);
+  text-align: left;
+}
+.content-main-all table td,
+.content-main-all table th {
+  border: 1px solid var(--navy-color);
+  padding: 5px;
+}
+
+/* content main results */
+.content-main-results h3#result-akan-name {
+  font-size: 3em;
+}
+.content-main-results h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+/* content main buttons */
+.content-main-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+/* content form */
+.content-form-title {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  padding: 1em;
+}
+.content-form-title h4 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 500;
+}
+.content-form form {
+  background-color: var(--white-color);
+  padding: 1em;
+}
+.content-form form p + p {
+  margin-top: 1em;
+}
+.content-form form p > label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.content-form form p input[type=date],
+.content-form form p input[type=submit] {
+  width: 100%
+}
+.content-form form p span {
+  display: block;
+  margin-left: 1em;
+  padding: 0.2em 0;
+}
+
+/* form validation errors */
+.alert {
+  color: var(--white-color);
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  text-align: center;
+}
+.alert.alert-error {
+  background-color: var(--alert-error-bg);
+}
+.alert.alert-info {
+  background-color: var(--alert-info-bg);
+}
+.alert.alert-success {
+  background-color: var(--alert-success-bg);
+}
+.alert li + li {
+  margin-top: 0.5em;
 }
 
 /* responsiveness */
