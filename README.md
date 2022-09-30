@@ -1,6 +1,8 @@
 # Project or program name
 Akan Names
 
+![Akan Names Screenshot](https://github.com/pkariithi/akan/blob/master/assets/images/screenshot.png)
+
 ## author name
 Patrick Karuri
 
