@@ -398,6 +398,17 @@ body {
   margin-top: -200px;
 }
 
+.content-main-random,
+.content-main-results {
+  position: relative;
+}
+.twitter-share-button {
+  position: absolute;
+  width: 32px;
+  top: 0;
+  right: 0;
+}
+
 /* loader from https://loading.io/css/ */
 .content-main-loading {
   text-align: center;

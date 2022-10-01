@@ -79,6 +79,11 @@ $(document).ready(function() {
     $('#result-akan-day').text(days[dayIndex]);
     $('#result-akan-name').text(akanName);
 
+    // set twitter button text
+    const twitterText = "Since I am a " + gender + " born on a " + days[dayIndex] + ", my Akan Name is '" + akanName + "'. Know yours here: https://pkariithi.github.io/akan/";
+    $('#content-main-results-twitter').attr('data-text', twitterText);
+    $('#content-main-results-twitter').attr('title', "Tweet your Akan Name");
+
     hideLoader("results");
   });
 
@@ -94,10 +99,16 @@ $(document).ready(function() {
     // random name - choose a random number between 0 and 6
     const randomDay = randomNumber(0,6);
     const randomGender = randomNumber(0,1);
+    const akanName = randomGender ? femaleNames[randomDay] : maleNames[randomDay];
 
     $('#rand-gender').text(genderNames[randomGender]);
     $('#rand-day').text(days[randomDay]);
-    $('#rand-akan-name').text(randomGender ? femaleNames[randomDay] : maleNames[randomDay]);
+    $('#rand-akan-name').text(akanName);
+
+    // set twitter button text
+    const twitterText = "Did you know: The Akan Name for a " + genderNames[randomGender] + " born on a " + days[randomDay] + " is '" + akanName + "'. Get another Akan Name here: https://pkariithi.github.io/akan/";
+    $('#content-main-random-twitter').attr('data-text', twitterText);
+    $('#content-main-random-twitter').attr('title', "Tweet this random Akan Name");
 
     hideLoader("random");
   }
