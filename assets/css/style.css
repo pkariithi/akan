@@ -467,6 +467,7 @@ body {
 }
 .content .container {
   align-items: flex-start;
+  flex-direction: row-reverse;
 }
 
 /* content main random */
@@ -510,9 +511,11 @@ body {
 
 /* content main buttons */
 .content-main-buttons {
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 1em;
+  text-align: center;
 }
 
 /* content form */
@@ -579,16 +582,23 @@ footer .container {
 }
 
 /* responsiveness */
-@media (max-width:1080px){
+@media (max-width:960px){
   .container {
     width: 100%;
   }
 }
-@media (max-width:1024px){
-}
-@media (max-width:960px){
-}
-@media (max-width:800px){
+@media (max-width:720px){
+  .hero .container p {
+    max-width: 100%;
+  }
+  .content-form {
+    flex-basis: 100%;
+    margin-top: 0;
+  }
+  .content-main {
+    flex-basis: 100%;
+    padding-right: 0;
+  }
 }
 @media (max-width:768px){}
 @media (max-width:640px){

@@ -36,6 +36,27 @@
     </section>
     <section class="content">
       <div class="container">
+        <div class="content-form">
+          <div class="content-form-title">
+            <h4>Enter your date of birth and gender to know your Akan name.</h4>
+          </div>
+          <form action="" method="POST" id="akanform">
+            <p>
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob" id="dob">
+            </p>
+            <p>
+              <label>Gender:</label>
+              <span>
+                <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
+              </span>
+              <span>
+                <label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label>
+              </span>
+            </p>
+            <p><input type="submit" name="submit" id="submit" value="Show me my Akan Name"></p>
+          </form>
+        </div>
         <div class="content-main">
           <div class="content-main-loading">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
@@ -101,27 +122,6 @@
             <a href="" id="random-button" name="random" class="button">View a random Akan Name</a>
             <a href="" id="all-button" name="all" class="button">View all Akan Names</a>
           </div>
-        </div>
-        <div class="content-form">
-          <div class="content-form-title">
-            <h4>Enter your date of birth and gender to know your Akan name.</h4>
-          </div>
-          <form action="" method="POST" id="akanform">
-            <p>
-              <label for="dob">Date of Birth</label>
-              <input type="date" name="dob" id="dob">
-            </p>
-            <p>
-              <label>Gender:</label>
-              <span>
-                <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
-              </span>
-              <span>
-                <label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label>
-              </span>
-            </p>
-            <p><input type="submit" name="submit" id="submit" value="Show me my Akan Name"></p>
-          </form>
         </div>
       </div>
     </section>

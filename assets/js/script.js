@@ -1,3 +1,4 @@
+$.fn.showFlex = function(){ this.css({'display':'flex'}); }
 $(document).ready(function() {
 
   // names
@@ -122,7 +123,7 @@ $(document).ready(function() {
       if(elementToshow === "results") {
         $('.content-main-results').show();
       }
-      $('.content-main-buttons').show();
+      $('.content-main-buttons').showFlex();
       $('.content-main-loading').hide();
     }
   }
