@@ -29,7 +29,7 @@ This web application will help you determine your Akan name just by entering you
 ## Author
 Patrick Karuri https://github.com/pkariithi
 
-## project setup instructions
+## Project setup instructions
 - Clone repo
 - Open in VS Code
 - Serve with Live Server
@@ -39,9 +39,11 @@ Patrick Karuri https://github.com/pkariithi
 - CSS
 - jQuery
 - Javascript
+- Google Fonts
+- CSS Loader from https://loading.io/css/
 
-## link to live site on GitHub Pages
+## Link to live site on GitHub Pages
 https://pkariithi.github.io/akan/
 
-## copyright and license information
+## Copyright and License Information
 (c) 2022. Patrick Karuri
