@@ -1,12 +1,9 @@
-# Project or program name
+# Project
 Akan Names
 
 ![Akan Names Screenshot](https://github.com/pkariithi/akan/blob/master/assets/images/screenshot.png)
 
-## author name
-Patrick Karuri
-
-## description of project
+## Description
 Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
 
 ### Male
@@ -29,10 +26,19 @@ Akan names are derived from Ghanian culture. Frequently in Ghana, children are g
 
 This web application will help you determine your Akan name just by entering your birthday and gender.
 
+## Author
+Patrick Karuri https://github.com/pkariithi
+
 ## project setup instructions
 - Clone repo
 - Open in VS Code
 - Serve with Live Server
+
+## Technologies used
+- HTML
+- CSS
+- jQuery
+- Javascript
 
 ## link to live site on GitHub Pages
 https://pkariithi.github.io/akan/
