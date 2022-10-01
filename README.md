@@ -39,7 +39,7 @@ Patrick Karuri https://github.com/pkariithi
 - CSS
 - jQuery
 - Javascript
-- Google Fonts
+- Spectral forn by Google Fonts https://fonts.google.com/specimen/Spectral
 - CSS Loader by https://loading.io/css/
 - Favicons by https://realfavicongenerator.net/
 
