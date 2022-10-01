@@ -85,7 +85,7 @@
             </table>
           </div>
           <div class="content-main-results">
-            <h3>Your Akan Name is:</h3>
+            <h3>Since you are a <strong id="result-akan-gender"></strong> born on a <strong id="result-akan-day"></strong>,<br /> your Akan Name is:</h3>
             <h3 id="result-akan-name"></h3>
           </div>
           <div class="content-main-buttons">
@@ -97,11 +97,7 @@
           <div class="content-form-title">
             <h4>Enter your date of birth and gender to know your Akan name.</h4>
           </div>
-          <form action="" method="POST">
-            <ul class="alert alert-error">
-              <li>The date of birth is invalid</li>
-              <li>The gender is invalid</li>
-            </ul>
+          <form action="" method="POST" id="akanform">
             <p>
               <label for="dob">Date of Birth</label>
               <input type="date" name="dob" id="dob">
@@ -109,10 +105,10 @@
             <p>
               <label>Gender:</label>
               <span>
-                <label for="male"><input type="radio" name="gender" id="male"> Male</label>
+                <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
               </span>
               <span>
-                <label for="female"><input type="radio" name="gender" id="female"> Female</label>
+                <label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label>
               </span>
             </p>
             <p><input type="submit" name="submit" id="submit" value="Show me my Akan Name"></p>
