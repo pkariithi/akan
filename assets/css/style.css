@@ -569,6 +569,15 @@ body {
   margin-top: 0.5em;
 }
 
+/* footer */
+footer {
+  margin: 3em 0 1em;
+}
+footer .container {
+  justify-content: center;
+  color: #888;
+}
+
 /* responsiveness */
 @media (max-width:1080px){
   .container {
