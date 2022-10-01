@@ -40,7 +40,8 @@ Patrick Karuri https://github.com/pkariithi
 - jQuery
 - Javascript
 - Google Fonts
-- CSS Loader from https://loading.io/css/
+- CSS Loader by https://loading.io/css/
+- Favicons by https://realfavicongenerator.net/
 
 ## Link to live site on GitHub Pages
 https://pkariithi.github.io/akan/

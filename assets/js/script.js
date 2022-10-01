@@ -1,4 +1,4 @@
-$.fn.showFlex = function(){ this.css({'display':'flex'}); }
+$.fn.showFlex = function() { this.css({'display':'flex'}); }
 $(document).ready(function() {
 
   // names
